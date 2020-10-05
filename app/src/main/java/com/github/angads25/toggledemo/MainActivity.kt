@@ -18,7 +18,7 @@ package com.github.angads25.toggledemo
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View) {
         when (view.id) {
-            R.id.switch_labeled -> startActivity(Intent(this@MainActivity, LabeledSwitchActivity::class.java))
+            R.id.switch_labeled -> startActivity(Intent(this@MainActivity, TestActivity::class.java))
             R.id.switch_day_night -> startActivity(Intent(this@MainActivity, DayNightActivity::class.java))
         }
     }
